@@ -38,7 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tblLOPBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            
+            this.quanlydiemDataSet7 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet7();
             this.tblLOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -46,12 +46,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            
+            this.tblLOPTableAdapter = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet7TableAdapters.tblLOPTableAdapter();
             this.btnLamSach = new System.Windows.Forms.Button();
             this.dgrLop = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLOPBindingSource1)).BeginInit();
-            
+            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLOPBindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -119,10 +120,13 @@
             // tblLOPBindingSource1
             // 
             this.tblLOPBindingSource1.DataMember = "tblLOP";
-            
+            this.tblLOPBindingSource1.DataSource = this.quanlydiemDataSet7;
+            // 
             // quanlydiemDataSet7
             // 
-            
+            this.quanlydiemDataSet7.DataSetName = "QuanlydiemDataSet7";
+            this.quanlydiemDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tblLOPBindingSource
             // 
             this.tblLOPBindingSource.DataMember = "tblLOP";
@@ -169,6 +173,7 @@
             this.button4.TabIndex = 34;
             this.button4.Text = "Thoát ";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -182,6 +187,7 @@
             this.button3.TabIndex = 33;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -194,6 +200,7 @@
             this.button1.TabIndex = 31;
             this.button1.Text = "Nhập";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -206,10 +213,12 @@
             this.button2.TabIndex = 32;
             this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tblLOPTableAdapter
             // 
-           
+            this.tblLOPTableAdapter.ClearBeforeFill = true;
+            // 
             // btnLamSach
             // 
             this.btnLamSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -219,14 +228,25 @@
             this.btnLamSach.TabIndex = 44;
             this.btnLamSach.Text = "Làm sạch";
             this.btnLamSach.UseVisualStyleBackColor = false;
+            this.btnLamSach.Click += new System.EventHandler(this.btnLamSach_Click);
             // 
             // dgrLop
             // 
+            this.dgrLop.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgrLop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgrLop.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STT});
             this.dgrLop.Location = new System.Drawing.Point(7, 22);
             this.dgrLop.Name = "dgrLop";
             this.dgrLop.Size = new System.Drawing.Size(380, 335);
             this.dgrLop.TabIndex = 0;
+            this.dgrLop.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrLop_CellClick_1);
+            this.dgrLop.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridView1_RowPrePaint);
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
             // 
             // frmLop
             // 
@@ -237,9 +257,10 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmLop";
             this.Size = new System.Drawing.Size(729, 446);
+            this.Load += new System.EventHandler(this.frmLop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLOPBindingSource1)).EndInit();
-            
+            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblLOPBindingSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -266,8 +287,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.BindingSource tblLOPBindingSource1;
-         
+        private QuanlydiemDataSet7 quanlydiemDataSet7;
+        private QuanlydiemDataSet7TableAdapters.tblLOPTableAdapter tblLOPTableAdapter;
         private System.Windows.Forms.Button btnLamSach;
         private System.Windows.Forms.DataGridView dgrLop;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
     }
 }
