@@ -49,29 +49,31 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tblSINHVIENBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-             
+            this.quanlydiemDataSet14 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet14();
             this.tblSINHVIENBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            
+            this.quanlydiemDataSet5 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet5();
             this.tblSINHVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
-           
+            this.quanlysinhvien = new QUANLYHOCSINHGIAOVIEN.Quanlysinhvien();
             this.tblSINHVIENBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-          
+            this.tblSINH_VIENTableAdapter = new QUANLYHOCSINHGIAOVIEN.QuanlysinhvienTableAdapters.tblSINH_VIENTableAdapter();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbtruongtk = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txttimkiem = new System.Windows.Forms.TextBox();
-          
+            this.tblSINH_VIENTableAdapter1 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet5TableAdapters.tblSINH_VIENTableAdapter();
+            this.tblSINH_VIENTableAdapter2 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet14TableAdapters.tblSINH_VIENTableAdapter();
             this.dgrDSSV = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblSINHVIENBindingSource2)).BeginInit();
-            
+            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSINHVIENBindingSource1)).BeginInit();
-            
+            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSINHVIENBindingSource)).BeginInit();
-           
+            ((System.ComponentModel.ISupportInitialize)(this.quanlysinhvien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSINHVIENBindingSource8)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -114,6 +116,7 @@
             this.btnLamSach.TabIndex = 40;
             this.btnLamSach.Text = "Làm sạch";
             this.btnLamSach.UseVisualStyleBackColor = false;
+            this.btnLamSach.Click += new System.EventHandler(this.btnLamSach_Click);
             // 
             // dateNgaysinh
             // 
@@ -133,6 +136,7 @@
             this.btnThoat.TabIndex = 33;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnXoa
             // 
@@ -145,6 +149,7 @@
             this.btnXoa.TabIndex = 32;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // cboGioiTinh
             // 
@@ -170,6 +175,7 @@
             this.btnThemmoi.TabIndex = 28;
             this.btnThemmoi.Text = "Thêm mới";
             this.btnThemmoi.UseVisualStyleBackColor = true;
+            this.btnThemmoi.Click += new System.EventHandler(this.btnThemmoi_Click);
             // 
             // btnSua
             // 
@@ -182,6 +188,7 @@
             this.btnSua.TabIndex = 29;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // cboMalop
             // 
@@ -275,24 +282,33 @@
             // tblSINHVIENBindingSource2
             // 
             this.tblSINHVIENBindingSource2.DataMember = "tblSINH_VIEN";
-             
+            this.tblSINHVIENBindingSource2.DataSource = this.quanlydiemDataSet14;
+            // 
             // quanlydiemDataSet14
             // 
-            
+            this.quanlydiemDataSet14.DataSetName = "QuanlydiemDataSet14";
+            this.quanlydiemDataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tblSINHVIENBindingSource1
             // 
             this.tblSINHVIENBindingSource1.DataMember = "tblSINH_VIEN";
-              
+            this.tblSINHVIENBindingSource1.DataSource = this.quanlydiemDataSet5;
+            // 
             // quanlydiemDataSet5
             // 
-             
+            this.quanlydiemDataSet5.DataSetName = "QuanlydiemDataSet5";
+            this.quanlydiemDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tblSINHVIENBindingSource
             // 
             this.tblSINHVIENBindingSource.DataMember = "tblSINH_VIEN";
-            
+            this.tblSINHVIENBindingSource.DataSource = this.quanlysinhvien;
+            // 
             // quanlysinhvien
             // 
-           
+            this.quanlysinhvien.DataSetName = "Quanlysinhvien";
+            this.quanlysinhvien.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tblSINHVIENBindingSource8
             // 
             this.tblSINHVIENBindingSource8.DataMember = "tblSINH_VIEN";
@@ -313,7 +329,8 @@
             // 
             // tblSINH_VIENTableAdapter
             // 
-           
+            this.tblSINH_VIENTableAdapter.ClearBeforeFill = true;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label1);
@@ -363,20 +380,33 @@
             this.txttimkiem.Name = "txttimkiem";
             this.txttimkiem.Size = new System.Drawing.Size(100, 20);
             this.txttimkiem.TabIndex = 0;
+            this.txttimkiem.TextChanged += new System.EventHandler(this.txttimkiem_TextChanged);
             // 
             // tblSINH_VIENTableAdapter1
             // 
-             
+            this.tblSINH_VIENTableAdapter1.ClearBeforeFill = true;
+            // 
             // tblSINH_VIENTableAdapter2
             // 
-            
+            this.tblSINH_VIENTableAdapter2.ClearBeforeFill = true;
+            // 
             // dgrDSSV
             // 
+            this.dgrDSSV.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgrDSSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgrDSSV.Location = new System.Drawing.Point(7, 20);
+            this.dgrDSSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STT});
+            this.dgrDSSV.Location = new System.Drawing.Point(6, 20);
             this.dgrDSSV.Name = "dgrDSSV";
-            this.dgrDSSV.Size = new System.Drawing.Size(454, 303);
+            this.dgrDSSV.Size = new System.Drawing.Size(455, 303);
             this.dgrDSSV.TabIndex = 0;
+            this.dgrDSSV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrDSSV_CellClick_1);
+            this.dgrDSSV.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgrDSSV_RowPrePaint_1);
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
             // 
             // frmQLSV
             // 
@@ -387,14 +417,15 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmQLSV";
             this.Size = new System.Drawing.Size(729, 446);
+            this.Load += new System.EventHandler(this.frmQLSV_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblSINHVIENBindingSource2)).EndInit();
-             
+            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSINHVIENBindingSource1)).EndInit();
-            
+            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSINHVIENBindingSource)).EndInit();
-            
+            ((System.ComponentModel.ISupportInitialize)(this.quanlysinhvien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSINHVIENBindingSource8)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -427,18 +458,22 @@
         private System.Windows.Forms.Button btnThemmoi;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.BindingSource tblSINHVIENBindingSource;
-         
+        private Quanlysinhvien quanlysinhvien;
+        private QuanlysinhvienTableAdapters.tblSINH_VIENTableAdapter tblSINH_VIENTableAdapter;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox cmbtruongtk;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txttimkiem;
         private System.Windows.Forms.BindingSource tblSINHVIENBindingSource1;
-        
+        private QuanlydiemDataSet5 quanlydiemDataSet5;
+        private QuanlydiemDataSet5TableAdapters.tblSINH_VIENTableAdapter tblSINH_VIENTableAdapter1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateNgaysinh;
         private System.Windows.Forms.Button btnLamSach;
         private System.Windows.Forms.BindingSource tblSINHVIENBindingSource2;
-        
+        private QuanlydiemDataSet14 quanlydiemDataSet14;
+        private QuanlydiemDataSet14TableAdapters.tblSINH_VIENTableAdapter tblSINH_VIENTableAdapter2;
         private System.Windows.Forms.DataGridView dgrDSSV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
     }
 }
