@@ -34,9 +34,9 @@
             this.tblKHOABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tblKHOABindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-             
+            this.quanlydiemDataSet9 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet9();
             this.tblKHOABindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-         
+            this.quanlykhoa = new QUANLYHOCSINHGIAOVIEN.Quanlykhoa();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnLamSach = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -47,15 +47,17 @@
             this.txtTenKhoa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            
+            this.tblKHOATableAdapter = new QUANLYHOCSINHGIAOVIEN.QuanlykhoaTableAdapters.tblKHOATableAdapter();
+            this.tblKHOATableAdapter1 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet9TableAdapters.tblKHOATableAdapter();
             this.dgrKhoa = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblKHOABindingSource)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblKHOABindingSource2)).BeginInit();
-            
+            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblKHOABindingSource1)).BeginInit();
-           
+            ((System.ComponentModel.ISupportInitialize)(this.quanlykhoa)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrKhoa)).BeginInit();
             this.SuspendLayout();
@@ -82,18 +84,23 @@
             // tblKHOABindingSource2
             // 
             this.tblKHOABindingSource2.DataMember = "tblKHOA";
-           
+            this.tblKHOABindingSource2.DataSource = this.quanlydiemDataSet9;
             // 
             // quanlydiemDataSet9
             // 
-           
+            this.quanlydiemDataSet9.DataSetName = "QuanlydiemDataSet9";
+            this.quanlydiemDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tblKHOABindingSource1
             // 
             this.tblKHOABindingSource1.DataMember = "tblKHOA";
-             
+            this.tblKHOABindingSource1.DataSource = this.quanlykhoa;
+            // 
             // quanlykhoa
             // 
-            
+            this.quanlykhoa.DataSetName = "Quanlykhoa";
+            this.quanlykhoa.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnLamSach);
@@ -122,6 +129,7 @@
             this.btnLamSach.TabIndex = 43;
             this.btnLamSach.Text = "Làm sạch";
             this.btnLamSach.UseVisualStyleBackColor = false;
+            this.btnLamSach.Click += new System.EventHandler(this.btnLamSach_Click);
             // 
             // button4
             // 
@@ -145,6 +153,7 @@
             this.button3.TabIndex = 28;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -156,6 +165,7 @@
             this.button1.TabIndex = 26;
             this.button1.Text = "Nhập";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -167,6 +177,7 @@
             this.button2.TabIndex = 27;
             this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtKhoa
             // 
@@ -206,17 +217,29 @@
             // 
             // tblKHOATableAdapter
             // 
-              
+            this.tblKHOATableAdapter.ClearBeforeFill = true;
+            // 
             // tblKHOATableAdapter1
             // 
-              
+            this.tblKHOATableAdapter1.ClearBeforeFill = true;
+            // 
             // dgrKhoa
             // 
+            this.dgrKhoa.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgrKhoa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgrKhoa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STT});
             this.dgrKhoa.Location = new System.Drawing.Point(7, 22);
             this.dgrKhoa.Name = "dgrKhoa";
             this.dgrKhoa.Size = new System.Drawing.Size(402, 338);
             this.dgrKhoa.TabIndex = 0;
+            this.dgrKhoa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrKhoa_CellClick_1);
+            this.dgrKhoa.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgrKhoa_RowPrePaint_1);
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
             // 
             // frmKhoa
             // 
@@ -226,13 +249,14 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmKhoa";
             this.Size = new System.Drawing.Size(729, 446);
+            this.Load += new System.EventHandler(this.frmKhoa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblKHOABindingSource)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tblKHOABindingSource2)).EndInit();
-             
+            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblKHOABindingSource1)).EndInit();
-             
+            ((System.ComponentModel.ISupportInitialize)(this.quanlykhoa)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrKhoa)).EndInit();
@@ -255,10 +279,13 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.BindingSource tblKHOABindingSource1;
-        
+        private Quanlykhoa quanlykhoa;
+        private QuanlykhoaTableAdapters.tblKHOATableAdapter tblKHOATableAdapter;
         private System.Windows.Forms.BindingSource tblKHOABindingSource2;
-        
+        private QuanlydiemDataSet9 quanlydiemDataSet9;
+        private QuanlydiemDataSet9TableAdapters.tblKHOATableAdapter tblKHOATableAdapter1;
         private System.Windows.Forms.Button btnLamSach;
         private System.Windows.Forms.DataGridView dgrKhoa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
     }
 }
