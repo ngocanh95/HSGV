@@ -72,7 +72,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                     m.HocKi = txtHocKy.Text;
                     MONHOCF mh = new MONHOCF();
                     mh.Insert(m);
-                    this.tblMONTableAdapter.Fill(this.quanlydiemDataSet8.tblMON);
+                    dgrMON.DataSource = context.tblMONs.ToList();
                     txtHocKy.Clear();
                     txtMaMon.Clear();
                     numsdvht.Value = 0;
@@ -96,7 +96,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                 m.HocKi = txtHocKy.Text;
                 MONHOCF mh = new MONHOCF();
                 mh.Update(m);
-                this.tblMONTableAdapter.Fill(this.quanlydiemDataSet8.tblMON);
+                dgrMON.DataSource = context.tblMONs.ToList();
             }
                 
         }
@@ -114,7 +114,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                 m.HocKi = txtHocKy.Text;
                 MONHOCF mh = new MONHOCF();
                 mh.Delete(m);
-                this.tblMONTableAdapter.Fill(this.quanlydiemDataSet8.tblMON);
+                dgrMON.DataSource = context.tblMONs.ToList();
                 txtHocKy.Clear();
                 txtMaMon.Clear();
                 numsdvht.Value = 0;

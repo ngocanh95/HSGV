@@ -44,7 +44,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                     f.Insert(k);
                     txtKhoa.Clear();
                     txtTenKhoa.Clear();
-                    this.tblKHOATableAdapter1.Fill(this.quanlydiemDataSet9.tblKHOA);
+                    dgrKhoa.DataSource = context.tblKHOAs.ToList();
                 }
             }
             
@@ -62,7 +62,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                 f.Delete(k);
                 txtKhoa.Clear();
                 txtTenKhoa.Clear();
-                this.tblKHOATableAdapter1.Fill(this.quanlydiemDataSet9.tblKHOA);
+                dgrKhoa.DataSource = context.tblKHOAs.ToList();
             }
                
         }
@@ -77,7 +77,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                 k.TenKhoa = txtTenKhoa.Text;
                 KHOAF f = new KHOAF();
                 f.Update(k);
-                this.tblKHOATableAdapter1.Fill(this.quanlydiemDataSet9.tblKHOA);
+                dgrKhoa.DataSource = context.tblKHOAs.ToList();
             }
                 
         }

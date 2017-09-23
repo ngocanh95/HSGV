@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQLDiem));
             this.btnXuat = new System.Windows.Forms.Button();
             this.tblKETQUABindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.quanlydiemDataSet6 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet6();
+          
             this.tblKETQUABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -61,12 +61,12 @@
             this.cmbtruongtk = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txttimkiem = new System.Windows.Forms.TextBox();
-            this.tblKET_QUATableAdapter = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet6TableAdapters.tblKET_QUATableAdapter();
+         
             this.btnLamSach = new System.Windows.Forms.Button();
             this.dgrDiem = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tblKETQUABindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet6)).BeginInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.tblKETQUABindingSource)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -91,12 +91,10 @@
             // tblKETQUABindingSource1
             // 
             this.tblKETQUABindingSource1.DataMember = "tblKET_QUA";
-            this.tblKETQUABindingSource1.DataSource = this.quanlydiemDataSet6;
-            // 
+         
             // quanlydiemDataSet6
             // 
-            this.quanlydiemDataSet6.DataSetName = "QuanlydiemDataSet6";
-            this.quanlydiemDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+         
             // 
             // tblKETQUABindingSource
             // 
@@ -371,7 +369,7 @@
             // 
             // tblKET_QUATableAdapter
             // 
-            this.tblKET_QUATableAdapter.ClearBeforeFill = true;
+        
             // 
             // btnLamSach
             // 
@@ -419,7 +417,7 @@
             this.Size = new System.Drawing.Size(729, 446);
             this.Load += new System.EventHandler(this.frmQLDiem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tblKETQUABindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet6)).EndInit();
+          
             ((System.ComponentModel.ISupportInitialize)(this.tblKETQUABindingSource)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -462,8 +460,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txttimkiem;
         private System.Windows.Forms.BindingSource tblKETQUABindingSource1;
-        private QuanlydiemDataSet6 quanlydiemDataSet6;
-        private QuanlydiemDataSet6TableAdapters.tblKET_QUATableAdapter tblKET_QUATableAdapter;
+        
         private System.Windows.Forms.TextBox txtdiemthi2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLamSach;

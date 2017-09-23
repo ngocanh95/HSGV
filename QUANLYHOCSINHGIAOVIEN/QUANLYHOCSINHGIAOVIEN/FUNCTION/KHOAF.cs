@@ -19,7 +19,7 @@ namespace QUANLYHOCSINHGIAOVIEN.FUNCTION
         {
             get { return context.tblKHOAs; }
         }
-        
+
 
         public tblKHOA FindEntity(string ID)
         {

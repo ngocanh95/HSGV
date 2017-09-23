@@ -31,8 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMonhoc));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.tblMONBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanlydiemDataSet8 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet8();
+           
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnLamSach = new System.Windows.Forms.Button();
             this.numsdvht = new System.Windows.Forms.NumericUpDown();
@@ -49,12 +48,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtMaMon = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.tblMONTableAdapter = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet8TableAdapters.tblMONTableAdapter();
+           
             this.dgrMON = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblMONBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet8)).BeginInit();
+          
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numsdvht)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgrMON)).BeginInit();
@@ -73,12 +72,11 @@
             // tblMONBindingSource
             // 
             this.tblMONBindingSource.DataMember = "tblMON";
-            this.tblMONBindingSource.DataSource = this.quanlydiemDataSet8;
+           
             // 
             // quanlydiemDataSet8
             // 
-            this.quanlydiemDataSet8.DataSetName = "QuanlydiemDataSet8";
-            this.quanlydiemDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+         
             // 
             // groupBox1
             // 
@@ -253,8 +251,7 @@
             this.label7.Text = "Mã môn";
             // 
             // tblMONTableAdapter
-            // 
-            this.tblMONTableAdapter.ClearBeforeFill = true;
+         
             // 
             // dgrMON
             // 
@@ -286,7 +283,7 @@
             this.Load += new System.EventHandler(this.frmMonhoc_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tblMONBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet8)).EndInit();
+           
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numsdvht)).EndInit();
@@ -313,8 +310,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.BindingSource tblMONBindingSource;
-        private QuanlydiemDataSet8 quanlydiemDataSet8;
-        private QuanlydiemDataSet8TableAdapters.tblMONTableAdapter tblMONTableAdapter;
+      
         private System.Windows.Forms.NumericUpDown numsdvht;
         private System.Windows.Forms.Button btnLamSach;
         private System.Windows.Forms.DataGridView dgrMON;

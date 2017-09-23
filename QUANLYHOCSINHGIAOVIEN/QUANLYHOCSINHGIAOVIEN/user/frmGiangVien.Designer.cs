@@ -52,59 +52,53 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tblGIANGVIENBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.quanlydiemDataSet3 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet3();
+         
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgrDSGV = new System.Windows.Forms.DataGridView();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblGIANGVIENBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
-            this.quanlydiemDataSet13 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet13();
+           
             this.tblGIANGVIENBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.quanlydiemDataSet4 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet4();
-            this.quanlydiemDataSet = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet();
+           
             this.tblGIANGVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblGIANG_VIENTableAdapter = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSetTableAdapters.tblGIANG_VIENTableAdapter();
-            this.quanlydiemDataSet2 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet2();
+           
             this.tblGIANGVIENBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblGIANG_VIENTableAdapter1 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet2TableAdapters.tblGIANG_VIENTableAdapter();
-            this.tblGIANG_VIENTableAdapter2 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet3TableAdapters.tblGIANG_VIENTableAdapter();
+           
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tblGIANG_VIENTableAdapter3 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet4TableAdapters.tblGIANG_VIENTableAdapter();
+          
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cmbtruongtk = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txttimkiem = new System.Windows.Forms.TextBox();
-            this.quanlydiemDataSet10 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet10();
+           
             this.tblGIANGVIENBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblGIANG_VIENTableAdapter4 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet10TableAdapters.tblGIANG_VIENTableAdapter();
-            this.quanlydiemDataSet11 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet11();
+          
             this.tblGIANGVIENBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblGIANG_VIENTableAdapter5 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet11TableAdapters.tblGIANG_VIENTableAdapter();
-            this.quanlydiemDataSet12 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet12();
+            
             this.tblGIANGVIENBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblGIANG_VIENTableAdapter6 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet12TableAdapters.tblGIANG_VIENTableAdapter();
-            this.tblGIANG_VIENTableAdapter7 = new QUANLYHOCSINHGIAOVIEN.QuanlydiemDataSet13TableAdapters.tblGIANG_VIENTableAdapter();
+           
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource3)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet3)).BeginInit();
+         
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrDSGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet13)).BeginInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet)).BeginInit();
+            
+          
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet2)).BeginInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource1)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet10)).BeginInit();
+          
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet11)).BeginInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet12)).BeginInit();
+         
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource7)).BeginInit();
             this.SuspendLayout();
             // 
@@ -340,12 +334,10 @@
             // tblGIANGVIENBindingSource2
             // 
             this.tblGIANGVIENBindingSource2.DataMember = "tblGIANG_VIEN";
-            this.tblGIANGVIENBindingSource2.DataSource = this.quanlydiemDataSet3;
-            // 
+           
             // quanlydiemDataSet3
             // 
-            this.quanlydiemDataSet3.DataSetName = "QuanlydiemDataSet3";
-            this.quanlydiemDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+        
             // 
             // errorProvider1
             // 
@@ -384,55 +376,47 @@
             // tblGIANGVIENBindingSource8
             // 
             this.tblGIANGVIENBindingSource8.DataMember = "tblGIANG_VIEN";
-            this.tblGIANGVIENBindingSource8.DataSource = this.quanlydiemDataSet13;
+          
             // 
             // quanlydiemDataSet13
             // 
-            this.quanlydiemDataSet13.DataSetName = "QuanlydiemDataSet13";
-            this.quanlydiemDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+        
             // 
             // tblGIANGVIENBindingSource4
             // 
             this.tblGIANGVIENBindingSource4.DataMember = "tblGIANG_VIEN";
-            this.tblGIANGVIENBindingSource4.DataSource = this.quanlydiemDataSet4;
+          
             // 
             // quanlydiemDataSet4
             // 
-            this.quanlydiemDataSet4.DataSetName = "QuanlydiemDataSet4";
-            this.quanlydiemDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+          
             // 
             // quanlydiemDataSet
             // 
-            this.quanlydiemDataSet.DataSetName = "QuanlydiemDataSet";
-            this.quanlydiemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+          
             // 
             // tblGIANGVIENBindingSource
             // 
             this.tblGIANGVIENBindingSource.DataMember = "tblGIANG_VIEN";
-            this.tblGIANGVIENBindingSource.DataSource = this.quanlydiemDataSet;
-            // 
+         
             // tblGIANG_VIENTableAdapter
             // 
-            this.tblGIANG_VIENTableAdapter.ClearBeforeFill = true;
-            // 
+          
             // quanlydiemDataSet2
             // 
-            this.quanlydiemDataSet2.DataSetName = "QuanlydiemDataSet2";
-            this.quanlydiemDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+          
             // 
             // tblGIANGVIENBindingSource1
             // 
             this.tblGIANGVIENBindingSource1.DataMember = "tblGIANG_VIEN";
-            this.tblGIANGVIENBindingSource1.DataSource = this.quanlydiemDataSet2;
+       
             // 
             // tblGIANG_VIENTableAdapter1
             // 
-            this.tblGIANG_VIENTableAdapter1.ClearBeforeFill = true;
-            // 
+          
             // tblGIANG_VIENTableAdapter2
             // 
-            this.tblGIANG_VIENTableAdapter2.ClearBeforeFill = true;
-            // 
+          
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -440,7 +424,7 @@
             // 
             // tblGIANG_VIENTableAdapter3
             // 
-            this.tblGIANG_VIENTableAdapter3.ClearBeforeFill = true;
+          
             // 
             // groupBox3
             // 
@@ -484,50 +468,38 @@
             this.txttimkiem.TextChanged += new System.EventHandler(this.txttimkiem_TextChanged_1);
             // 
             // quanlydiemDataSet10
-            // 
-            this.quanlydiemDataSet10.DataSetName = "QuanlydiemDataSet10";
-            this.quanlydiemDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+          
             // 
             // tblGIANGVIENBindingSource5
             // 
             this.tblGIANGVIENBindingSource5.DataMember = "tblGIANG_VIEN";
-            this.tblGIANGVIENBindingSource5.DataSource = this.quanlydiemDataSet10;
+          
             // 
             // tblGIANG_VIENTableAdapter4
             // 
-            this.tblGIANG_VIENTableAdapter4.ClearBeforeFill = true;
-            // 
+           
             // quanlydiemDataSet11
             // 
-            this.quanlydiemDataSet11.DataSetName = "QuanlydiemDataSet11";
-            this.quanlydiemDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
+         
             // tblGIANGVIENBindingSource6
             // 
             this.tblGIANGVIENBindingSource6.DataMember = "tblGIANG_VIEN";
-            this.tblGIANGVIENBindingSource6.DataSource = this.quanlydiemDataSet11;
+       
             // 
             // tblGIANG_VIENTableAdapter5
             // 
-            this.tblGIANG_VIENTableAdapter5.ClearBeforeFill = true;
+         
             // 
             // quanlydiemDataSet12
             // 
-            this.quanlydiemDataSet12.DataSetName = "QuanlydiemDataSet12";
-            this.quanlydiemDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+           
             // 
             // tblGIANGVIENBindingSource7
             // 
             this.tblGIANGVIENBindingSource7.DataMember = "tblGIANG_VIEN";
-            this.tblGIANGVIENBindingSource7.DataSource = this.quanlydiemDataSet12;
+          
             // 
-            // tblGIANG_VIENTableAdapter6
-            // 
-            this.tblGIANG_VIENTableAdapter6.ClearBeforeFill = true;
-            // 
-            // tblGIANG_VIENTableAdapter7
-            // 
-            this.tblGIANG_VIENTableAdapter7.ClearBeforeFill = true;
+          
             // 
             // frmGiangVien
             // 
@@ -543,25 +515,24 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet3)).EndInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgrDSGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet13)).EndInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet)).EndInit();
+            
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet2)).EndInit();
+          
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet10)).EndInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet11)).EndInit();
+          
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet12)).EndInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.tblGIANGVIENBindingSource7)).EndInit();
             this.ResumeLayout(false);
 
@@ -589,18 +560,14 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.BindingSource tblGIANGVIENBindingSource;
-        private QuanlydiemDataSet quanlydiemDataSet;
-        private QuanlydiemDataSetTableAdapters.tblGIANG_VIENTableAdapter tblGIANG_VIENTableAdapter;
+       
         private System.Windows.Forms.BindingSource tblGIANGVIENBindingSource1;
-        private QuanlydiemDataSet2 quanlydiemDataSet2;
-        private QuanlydiemDataSet2TableAdapters.tblGIANG_VIENTableAdapter tblGIANG_VIENTableAdapter1;
+        
         private System.Windows.Forms.BindingSource tblGIANGVIENBindingSource2;
-        private QuanlydiemDataSet3 quanlydiemDataSet3;
-        private QuanlydiemDataSet3TableAdapters.tblGIANG_VIENTableAdapter tblGIANG_VIENTableAdapter2;
+       
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.BindingSource tblGIANGVIENBindingSource4;
-        private QuanlydiemDataSet4 quanlydiemDataSet4;
-        private QuanlydiemDataSet4TableAdapters.tblGIANG_VIENTableAdapter tblGIANG_VIENTableAdapter3;
+       
         private System.Windows.Forms.DateTimePicker dateNgaySinh;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtPhone;
@@ -609,17 +576,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txttimkiem;
         private System.Windows.Forms.BindingSource tblGIANGVIENBindingSource5;
-        private QuanlydiemDataSet10 quanlydiemDataSet10;
-        private QuanlydiemDataSet10TableAdapters.tblGIANG_VIENTableAdapter tblGIANG_VIENTableAdapter4;
+        
         private System.Windows.Forms.BindingSource tblGIANGVIENBindingSource6;
-        private QuanlydiemDataSet11 quanlydiemDataSet11;
-        private QuanlydiemDataSet11TableAdapters.tblGIANG_VIENTableAdapter tblGIANG_VIENTableAdapter5;
+       
         private System.Windows.Forms.BindingSource tblGIANGVIENBindingSource7;
-        private QuanlydiemDataSet12 quanlydiemDataSet12;
-        private QuanlydiemDataSet12TableAdapters.tblGIANG_VIENTableAdapter tblGIANG_VIENTableAdapter6;
+       
         private System.Windows.Forms.BindingSource tblGIANGVIENBindingSource8;
-        private QuanlydiemDataSet13 quanlydiemDataSet13;
-        private QuanlydiemDataSet13TableAdapters.tblGIANG_VIENTableAdapter tblGIANG_VIENTableAdapter7;
+     
         private System.Windows.Forms.Button btnLamSach;
         private System.Windows.Forms.DataGridView dgrDSGV;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;

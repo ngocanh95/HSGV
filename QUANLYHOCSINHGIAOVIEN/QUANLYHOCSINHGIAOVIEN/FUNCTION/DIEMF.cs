@@ -19,7 +19,7 @@ namespace QUANLYHOCSINHGIAOVIEN.FUNCTION
         {
             get { return context.tblKET_QUA; }
         }
-        
+
         public tblKET_QUA FindEntity(string ID1, string ID2)
         {
             tblKET_QUA dbEntry = context.tblKET_QUA.Find(ID1, ID2);

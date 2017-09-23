@@ -53,7 +53,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                     g.MaKhoa = cboKhoa.Text;
                     g.TenLop = txtTenlop.Text;
                     var result = new LOPF().Insert(g);
-                    this.tblLOPTableAdapter.Fill(this.quanlydiemDataSet7.tblLOP);
+                    dgrLop.DataSource = context.tblLOPs.ToList();
                     txtMaLop.Clear();
                     txtTenlop.Clear();
                     cboKhoa.Text = "";
@@ -73,7 +73,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                 g.MaKhoa = cboKhoa.Text;
                 g.TenLop = txtTenlop.Text;
                 var result = new LOPF().Update(g);
-                this.tblLOPTableAdapter.Fill(this.quanlydiemDataSet7.tblLOP);
+                dgrLop.DataSource = context.tblLOPs.ToList();
             }
                 
         }
@@ -90,7 +90,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
 
                 var result = new LOPF().Delete(g);
                 context = new HSGVDbContext();
-                this.tblLOPTableAdapter.Fill(this.quanlydiemDataSet7.tblLOP);
+                dgrLop.DataSource = context.tblLOPs.ToList();
                 txtMaLop.Clear();
                 txtTenlop.Clear();
                 cboKhoa.Text = "";

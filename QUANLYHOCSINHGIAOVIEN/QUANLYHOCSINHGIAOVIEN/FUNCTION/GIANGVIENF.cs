@@ -15,13 +15,13 @@ namespace QUANLYHOCSINHGIAOVIEN.FUNCTION
         {
             context = new HSGVDbContext();
         }
-  
+
         public IQueryable<tblGIANG_VIEN> tblGIANG_VIENs
         {
             get { return context.tblGIANG_VIEN; }
         }
 
-     
+
 
         public tblGIANG_VIEN FindEntity(string ID)
         {
@@ -50,7 +50,7 @@ namespace QUANLYHOCSINHGIAOVIEN.FUNCTION
             dbEntry.Phone = model.Phone;
             dbEntry.Email = model.Email;
             dbEntry.PhanLoaiGV = model.PhanLoaiGV;
-           
+
 
             context.SaveChanges();
             return true;

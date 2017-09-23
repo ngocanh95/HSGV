@@ -15,13 +15,13 @@ namespace QUANLYHOCSINHGIAOVIEN.FUNCTION
         {
             context = new HSGVDbContext();
         }
-    
+
         public IQueryable<tblSINH_VIEN> tblSINH_VIENs
         {
             get { return context.tblSINH_VIEN; }
         }
 
-    
+
 
         public tblSINH_VIEN FindEntity(string ID)
         {

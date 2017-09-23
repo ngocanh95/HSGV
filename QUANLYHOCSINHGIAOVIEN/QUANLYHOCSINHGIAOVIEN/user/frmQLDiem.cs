@@ -57,7 +57,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                     DIEMF f = new DIEMF();
                     f.Insert(g);
                     context = new HSGVDbContext();
-                    this.tblKET_QUATableAdapter.Fill(this.quanlydiemDataSet6.tblKET_QUA);
+                    dgrDiem.DataSource = context.tblKET_QUA.ToList();
                     txtMaSV.Clear();
                     txtMaMH.Clear();
                     txtHocKi.Clear();
@@ -94,7 +94,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                 DIEMF f = new DIEMF();
                 f.Update(g);
                 context = new HSGVDbContext();
-                this.tblKET_QUATableAdapter.Fill(this.quanlydiemDataSet6.tblKET_QUA);
+                dgrDiem.DataSource = context.tblKET_QUA.ToList();
             }
             
         }
@@ -118,7 +118,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                 DIEMF f = new DIEMF();
                 f.Delete(g);
                 context = new HSGVDbContext();
-                this.tblKET_QUATableAdapter.Fill(this.quanlydiemDataSet6.tblKET_QUA);
+                dgrDiem.DataSource = context.tblKET_QUA.ToList();
                 txtMaSV.Clear();
                 txtMaMH.Clear();
                 txtHocKi.Clear();

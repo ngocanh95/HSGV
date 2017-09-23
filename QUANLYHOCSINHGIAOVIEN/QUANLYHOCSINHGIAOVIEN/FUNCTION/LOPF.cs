@@ -19,7 +19,7 @@ namespace QUANLYHOCSINHGIAOVIEN.FUNCTION
         {
             get { return context.tblLOPs; }
         }
-        
+
         public tblLOP FindEntity(string ID)
         {
             tblLOP dbEntry = context.tblLOPs.Find(ID);
@@ -44,7 +44,7 @@ namespace QUANLYHOCSINHGIAOVIEN.FUNCTION
             dbEntry.TenLop = model.TenLop;
 
             dbEntry.MaKhoa = model.MaKhoa;
-            
+
             context.SaveChanges();
             return true;
         }

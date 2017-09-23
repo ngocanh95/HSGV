@@ -80,7 +80,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                     g.GioiTinh = cboGioiTinh.Text;
                     g.MaLop = cboMalop.Text;
                     f.Insert(g);
-                    this.tblSINH_VIENTableAdapter2.Fill(this.quanlydiemDataSet14.tblSINH_VIEN);
+                    dgrDSSV.DataSource = context.tblSINH_VIEN.ToList();
                     txtMaSV.Clear();
                     txtHoTen.Clear();
                     txtDiaChi.Clear();
@@ -107,7 +107,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                 SINHVIENF f = new SINHVIENF();
                 f.Update(g);
                 context = new HSGVDbContext();
-                this.tblSINH_VIENTableAdapter2.Fill(this.quanlydiemDataSet14.tblSINH_VIEN);
+                dgrDSSV.DataSource = context.tblSINH_VIEN.ToList();
             }
            
         }
@@ -123,7 +123,7 @@ namespace QUANLYHOCSINHGIAOVIEN.user
                 SINHVIENF f = new SINHVIENF();
                 f.Delete(g);
                 context = new HSGVDbContext();
-                this.tblSINH_VIENTableAdapter2.Fill(this.quanlydiemDataSet14.tblSINH_VIEN);
+                dgrDSSV.DataSource = context.tblSINH_VIEN.ToList();
             }
             
         }
